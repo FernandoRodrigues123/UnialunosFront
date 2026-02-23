@@ -10,9 +10,9 @@ const PublicacaoCard = (props) => {
     const [liked, setLiked] = useState(false);
     const [src, setSrc] = useState(require('../../../imagens/like/like.png')); // Imagem inicial
 
-  
+    
     const pub = props.publicacao;
-
+    
     useEffect(() => {
         // Buscar token e login ao montar o componente
         buscaTokenELogin().then(response => {
@@ -32,6 +32,9 @@ const PublicacaoCard = (props) => {
     }, [pub.id]); // Adiciona `pub.id` como dependência para evitar erros de re-renderização
 
     const disparaCurtir = () => {
+        if(liked){
+            console.log("foi curtido")
+        }
         if (!token || !login) {
             alert("Token ou login não disponível.");
             return;

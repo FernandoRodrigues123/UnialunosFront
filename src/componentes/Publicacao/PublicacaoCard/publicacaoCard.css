@@ -1,0 +1,67 @@
+/* Estilo para o contêiner do card */
+.card {
+    border: 2px solid #55788B;
+    border-radius: 10px; 
+    margin: 16px;
+    background-color: #fff;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+/* Estilo para o cabeçalho dentro do card */
+.card header {
+    border-radius: 10px 10px 0px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 12px;
+    background-color: #007bff;
+   
+
+}
+.card header #conteudo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#nome{
+    margin: auto 0px;
+}
+/* Estilo para o título dentro do card */
+.card .corpo .titulo h1 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+/* Estilo para o corpo dentro do card */
+.card .corpo {
+    margin: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilo para os parágrafos dentro do corpo */
+.card .corpo p {
+    margin-bottom: 8px;
+}
+
+/* Estilo para a referência dentro do corpo */
+.card .corpo p:last-child {
+    font-style: italic;
+    color: #888;
+}
+.botao-like{
+    background-color: #ffffff00;
+    border: none;
+        
+}
+
+#like-icon{
+    width: 30px;
+}
+footer{
+    display: flex;
+}
+
